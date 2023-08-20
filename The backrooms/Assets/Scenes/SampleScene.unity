@@ -27,7 +27,7 @@ RenderSettings:
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.26687434, g: 0.26877356, b: 0.2735849, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: 0.517
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -1381,18 +1381,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e25c1cd8567ab8d4b94c85509ca21a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 963194228}
-  mouseSmoothTime: 0
-  cursorLock: 1
-  mouseSensitivity: 3.5
-  Speed: 15
-  moveSmoothTime: 0
-  gravity: -30
-  groundCheck: {fileID: 1740605194}
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
-  jumpHeight: 6
+  speed: 15
+  cameraSensitivity: 2
 --- !u!114 &776291625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,6 +1397,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlashlightSpotLight: {fileID: 1853643501}
   FlashlightEnabled: 1
+  battarytime: 10000
+  depletionspeed: 10
+  lightturnoffnumber: 0
+  BattaryCalculation: 0
 --- !u!4 &832225211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5459998754928662286, guid: ea274561e0f26978482b4f5abc388e9d, type: 3}
